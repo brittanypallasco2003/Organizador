@@ -2,24 +2,63 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  font-family: Tahoma;
 }
 
 /*fondo de la pagina*/
-.capa{ 
+body{ 
   width: 100%;
-  height: 100vh;
+  height: auto;
   background:linear-gradient(130deg, gold , LightCoral, mediumpurple);
 }
 
+
+label {
+  margin-right: 15px;
+  line-height: 30px;
+}
+
+input.time {
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid black;
+}
+
+legend {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+
 form {
     /* Centrar el formulario en la página */
-    margin: 0 auto;
-    width: 400px;
+    width: 500px;
+    height: auto;
+    margin: 80px auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     /* Esquema del formulario */
     padding: 1em;
-    border: 1px solid rgba(255, 255, 255, 0.5);/*valores: grosor, color, estilo del borde*/
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 1em;
   }
 
 .button{

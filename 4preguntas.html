@@ -3,84 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas| lisTame</title>
+    <title>Document</title>
     <link rel="stylesheet" href="estiloPreguntas.css">
 </head>
-<body class="capa"> 
-    <header id="logo">
-            <img src="imagenes/logo.png" width="75" height="75" style="float:left;">
-            <h1>lisTame</h1>
+
+<body>
+    <header id="logo"><!--no colocar una etiqueta de header dentro de otro heade. Ni dentro de un footer-->
+        <img src="imagenes/logo.png" width="75" height="75" style="float:left;">
+        <h1>lisTame</h1>
     </header>
-    <header id="titulo"><!--no colocar una etiqueta de header dentro de otro heade. Ni dentro de un footer-->
+    <div class="formulario">
         <h1>Preguntas</h1>
-    </header>
-    <section>
-        <article>
-            <form action="/formulario" method="post">
-                <ul>
-                    <li style="list-style-type: none;">
-                        <h3>¿Qué actividad va a realizar?</h3>
-                        <input type="text"/ id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
-                        <ul>
-                            <li style="list-style-type: none;">
-                                <h4>Tiempo para realizar la actividad</h4>
-                                <input type="radio" id="dia" name="dia"/> <label for="dia">Este día</label>
-                                <br>
-                                <input type="radio" id="semana" name="semana"/> <label for="semana">Esta semana</label>
-                                <br>
-                                <input type="radio" id="mes" name="mes"/> <label for="mes">Este mes</label>
-                                <br>
-                                <input type="radio" id="year" name="year"/> <label for="year">Este año</label>
-                            </li>
-                            <li style="list-style-type: none;">
-                                <h4>¿Cuál es el tipo de actividad?</h4>
-                                <input type="radio" id="sencilla" name="sencilla"> <label for="sencilla">Actividad sencilla</label>
-                                <br>
-                                <input type="radio" id="compleja" name="compleja"> <label for="comp">Actividad compleja</label>
-                            </li>
-                            <li style="list-style-type: none;">
-                                <h4>Detalle un máximo de 5 subtareas</h4>
-                                <ol>
-                                    <li>
-                                        <label for="act1"></label>
-                                        <input type="text" id="act1" name="act1">
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <label for="act2"></label>
-                                        <input type="text" id="act2" name="act2">
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <label for="act3"></label>
-                                        <input type="text" id="act3" name="act3">
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <label for="act4"></label>
-                                        <input type="text" id="act4" name="act4">
-                                    </li>
-                                    <br>
-                                    <li>
-                                        <label for="act5"></label>
-                                        <input type="text" id="act5" name="act5">
-                                    </li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="button" style="list-style-type: none;">
-                        <br>
-                        <button type="submit">Ingresar Actividad</button>
-                    </li>
-                </ul>
-                <br> 
-            </form>
-        </article>
-    </section>
-
+        <form action="/formulario" method="post">
+            <div>
+                <h3>¿Qué actividad va a realizar?</h3>
+                <input type="text"/ id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Tiempo para realizar la actividad</legend>
+                    <p>
+                        <input class="time"
+                        type="radio"
+                        id="dia"
+                        name="time_act"
+                        value="dia"
+                        checked>
+                        <label for="dia">Este día</label>
+                    </p>
+                    <p>
+                        <input class="time" type="radio" id="semana" name="time_act" value="semana"/>
+                        <label for="semana">Esta semana</label>
+                    </p>
+                    <p>
+                        <input class="time" type="radio" id="mes" name="time_act" value="mes"/>
+                        <label for="mes">Este mes</label>
+                    </p>
+                    <p>
+                        <input class="time"type="radio" id="year" name="time_act" value="year"/>
+                        <label for="year">Este año</label>
+                    </p>
+                </fieldset>
+            </div>
+            <!--segunda pregunta-->
+            <div>
+                <fieldset>
+                    <legend>¿Cuál es el tipo de actividad?</legend>
+                    <p>
+                        <input class="tipo"
+                        type="radio"
+                        id="sencilla"
+                        name="tipo_act"
+                        value="sencilla"
+                        checked> 
+                        <label for="sencilla">Actividad sencilla</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="compleja" name="tipo_act" value="compleja">
+                        <label for="compleja">Actividad compleja</label>
+                    </p> 
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend><h4>Detalle un máximo de 5 subtareas</h4></legend>
+                    <p>
+                        <label for="act1">1.</label>
+                        <input type="text" id="act1" name="act1"> 
+                    </p>
+                    <p>
+                        <label for="act2">2.</label>
+                        <input type="text" id="act2" name="act2">
+                    </p>
+                    <p>
+                        <label for="act3">3.</label>
+                        <input type="text" id="act3" name="act3">
+                    </p>
+                    <p>
+                        <label for="act4">4.</label>
+                        <input type="text" id="act4" name="act4">
+                   </p>
+                   <p>
+                        <label for="act5">5.</label>
+                        <input type="text" id="act5" name="act5">
+                   </p>
+                </fieldset>
+            </div>
+            <button type="submit"><p>Ingresar Actividad</p></button>
+        </form>
     </div>
-
-    <footer></footer>
 </body>
 </html>
