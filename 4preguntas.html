@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas| lisTame</title>
+    <link rel="stylesheet" href="estiloPreguntas.css">
+</head>
+<body class="capa"> 
+    <header id="logo">
+            <img src="imagenes/logo.png" width="75" height="75" style="float:left;">
+            <h1>lisTame</h1>
+    </header>
+    <header id="titulo"><!--no colocar una etiqueta de header dentro de otro heade. Ni dentro de un footer-->
+        <h1>Preguntas</h1>
+    </header>
+    <section>
+        <article>
+            <form action="/formulario" method="post">
+                <ul>
+                    <li style="list-style-type: none;">
+                        <h3>¿Qué actividad va a realizar?</h3>
+                        <input type="text"/ id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
+                        <ul>
+                            <li style="list-style-type: none;">
+                                <h4>Tiempo para realizar la actividad</h4>
+                                <input type="radio" id="dia" name="dia"/> <label for="dia">Este día</label>
+                                <br>
+                                <input type="radio" id="semana" name="semana"/> <label for="semana">Esta semana</label>
+                                <br>
+                                <input type="radio" id="mes" name="mes"/> <label for="mes">Este mes</label>
+                                <br>
+                                <input type="radio" id="year" name="year"/> <label for="year">Este año</label>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <h4>¿Cuál es el tipo de actividad?</h4>
+                                <input type="radio" id="sencilla" name="sencilla"> <label for="sencilla">Actividad sencilla</label>
+                                <br>
+                                <input type="radio" id="compleja" name="compleja"> <label for="comp">Actividad compleja</label>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <h4>Detalle un máximo de 5 subtareas</h4>
+                                <ol>
+                                    <li>
+                                        <label for="act1"></label>
+                                        <input type="text" id="act1" name="act1">
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <label for="act2"></label>
+                                        <input type="text" id="act2" name="act2">
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <label for="act3"></label>
+                                        <input type="text" id="act3" name="act3">
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <label for="act4"></label>
+                                        <input type="text" id="act4" name="act4">
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <label for="act5"></label>
+                                        <input type="text" id="act5" name="act5">
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="button" style="list-style-type: none;">
+                        <br>
+                        <button type="submit">Ingresar Actividad</button>
+                    </li>
+                </ul>
+                <br> 
+            </form>
+        </article>
+    </section>
+
+    </div>
+
+    <footer></footer>
+</body>
+</html>

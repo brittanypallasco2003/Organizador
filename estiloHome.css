@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.capa{ 
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(130deg, gold , LightCoral, mediumpurple);
+ }
+
+table, th{
+    border: 1px solid mediumpurple;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    width: 40%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.content .tarjeta{
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    overflow:hidden;
+    margin: 30px;
+    text-align: center;
+    transition: all 0.35s;
+    background: whitesmoke;
+}
+
+.content.tarjeta:hover{
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.content.tarjeta p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 30px;
+}
+
+.content p.enunciado_act{
+    text-align: center;
+}
