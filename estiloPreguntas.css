@@ -8,17 +8,23 @@
 /*fondo de la pagina*/
 body{ 
   width: 100%;
-  height: auto;
+  height: 100vh;
   background:linear-gradient(130deg, gold , LightCoral, mediumpurple);
 }
 
+/*espacio entre preguntas*/
+div.pregunta{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 label {
   margin-right: 15px;
   line-height: 30px;
 }
 
-input.time {
+
+input.radioOpc {
   appearance: none;
 
   border-radius: 50%;
