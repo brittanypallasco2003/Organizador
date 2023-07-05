@@ -15,7 +15,7 @@ body {
 
 /*espacio entre preguntas*/
 div.pregunta{
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -23,7 +23,7 @@ div.pregunta{
 
 /*espacio interno de preguntas*/
 fieldset{
-  padding: 10px 25px 10px 25px;
+  padding: 10px 25px 19px 25px;
   border-radius: 4px;
 }
 
@@ -64,7 +64,7 @@ legend {
 div.formulario{
   justify-content: center;
   align-items: center;
-  width: 530px;
+  width: 650px;
   height: auto;
   margin: 65px auto;
   background: whitesmoke;
@@ -72,8 +72,8 @@ div.formulario{
   border-radius: 20px;
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-top: 30px; 
   padding-bottom: 20px;
 }
@@ -84,8 +84,9 @@ button{
     background-color: #000;
     color: white;
     border-radius: 4px;
-    padding: 5px;
-    font-size: 15px;
+    padding: 10px 14px 10px 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #titulo{
@@ -109,4 +110,29 @@ img.cabecera{
   position: relative;
   top: 30px;
   left: 20px;
+}
+
+form input.texto{
+  width: 420px;
+  height: 30px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.formulario input:focus{
+  outline:0;
+  border: 2px solid black;
+}
+
+form input.detact{
+  width: 538px;
+  height: 30px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.boton-1:active{
+  box-shadow:3px 2px 15px 1px#000;
+  font-weight:bold;
+  color: #fff;;
 }
