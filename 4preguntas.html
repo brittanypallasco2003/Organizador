@@ -8,14 +8,14 @@
 </head>
 
 <body>
-    <header id="logo"><!--no colocar una etiqueta de header dentro de otro heade. Ni dentro de un footer-->
-        <img src="imagenes/logo.png" width="75" height="75" style="float:left;">
-        <h1>lisTame</h1>
+    <header ><!--no colocar una etiqueta de header dentro de otro heade. Ni dentro de un footer-->
+        <img class="cabecer" src="imagenes/logo.png" width="100" height="100" style="float:left;">
+        <h1 class="cabecera" id="nomPag">lisTame</h1>
     </header>
     <div class="formulario">
-        <h1>Preguntas</h1>
+        <h1  id="titulo">Preguntas</h1>
         <form action="/formulario" method="post">
-            <div class="pregunta">
+            <div class="pregunta principal">
                 <h3>¿Qué actividad va a realizar?</h3>
                 <input type="text"/ id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
             </div>
