@@ -211,5 +211,7 @@ header{
 header #nombre{
     position: relative;
     right: 385px;
+    bottom: 5px ;
     font-size: 53PX;
+
 }
