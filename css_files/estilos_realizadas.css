@@ -8,6 +8,8 @@
     width: auto;
     height: auto;
     background:linear-gradient(130deg, gold , LightCoral, mediumpurple);
+    background-size: cover;
+    background-position: center;
  }
  #titulo{
     text-align:center;
