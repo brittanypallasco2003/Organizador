@@ -65,7 +65,7 @@ div.formulario{
   align-items: center;
   width: 530px;
   height: auto;
-  margin: 30px auto;
+  margin: 65px auto;
   background: whitesmoke;
   border: 2px solid rgba(255, 255, 255, .5);
   border-radius: 20px;
@@ -80,7 +80,7 @@ div.formulario{
 
 button{
     border: 2px solid #000;
-    
+
 }
 
 #titulo{
@@ -91,10 +91,18 @@ button{
  .cabecera{
   display: inline;
   font-family: Tahoma;
-  font-size: 60px;
+  font-size: 53px;
+}
+
+img.cabecera{
+  position: relative;
+  top: 20px;
+  left: 5px;
 }
 
 #nomPag{
   position: relative;
-  top: 10px;
+  top: 30px;
+  left: 20px;
+
 }
