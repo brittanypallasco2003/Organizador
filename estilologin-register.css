@@ -81,9 +81,9 @@ header{
 
 .cuadro{
     position: relative;
-    width: 400px;
+    width: 460px;
     height: 440px;
-    background: whitesmoke;
+    background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
