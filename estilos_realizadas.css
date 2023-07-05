@@ -5,24 +5,27 @@
 }
 
 .capa{ 
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     background:linear-gradient(130deg, gold , LightCoral, mediumpurple);
  }
  #titulo{
     text-align:center;
+    font-family: Tahoma;
      
  }
 
  .box {
-    font-size: 18px;
+    
+    font-size: 20px;
     font-weight: 400;
     background:whitesmoke;
-    margin: 50px 50px;
+    margin: 67px 200px;
     overflow: hidden;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     opacity: .8;
+    font-family: Tahoma;
     }
 
     .div-img {
