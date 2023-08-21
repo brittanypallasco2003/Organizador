@@ -31,7 +31,7 @@
                 <br>
                 <br>
                 <br>
-                <th >Nueva Actividad</th>
+                <th  onclick="toggleContenido()" >Nueva Actividad</th>
                 <th><a href="5Pendientes.html">Actividades Pendientes</a></th>
                 <th> <a href="6Realizadas.html">Actividades Realizadas</a></th>
             </tr>
@@ -39,7 +39,7 @@
     </nav>
 
 
-    <div class="formulario">
+    <div class="formulario" id="contenido_oculto">
         <h1 id="titulo">Preguntas</h1>
         <form id="formulario" method="post">
             <div class="pregunta principal">
@@ -79,7 +79,7 @@
                     </p>
                 </fieldset>
             </div>
-            <button type="submit" id="botoningresar"><h4>Ingresar Actividad</h4></button>
+            <button type="submit" id="botoningresar" onclick="toggleContenido()"><h4>Ingresar Actividad</h4></button>
         </form>
     </div>
 
