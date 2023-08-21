@@ -23,19 +23,23 @@ $(document).ready(function() {
     const conjuntoElemento  = []
     
     const elemento = `
-      <li id="tarjeta">
-        <p>Act: ${act_realizar}</p>
-        <p>Fecha limite: ${fecha}</p>
-        <p>Tipo de actividad: ${tipo}</p>
-        <h3>Detalles</h3>
-        <p><input type="checkbox" id="scales1" name="scales" checked/>
-        <label for="scales1">${act1}</label>
-        <input type="checkbox" id="scales2" name="scales" checked/>
-        <label for="scales2">${act2}</label></p>
-        <img src="/img/reloj.png" width="45" height="45">
-        <button type="button">Realizado</button>
-        <button type="button" id=eliminar>Eliminar</button>
-      </li>
+      <div class="content">
+        <div class="tarjeta">
+          <li id="tarjeta">
+            <p>Act: ${act_realizar}</p>
+            <p>Fecha limite: ${fecha}</p>
+            <p>Tipo de actividad: ${tipo}</p>
+            <h3>Detalles</h3>
+            <p><input type="checkbox" id="scales1" name="scales" checked/>
+            <label for="scales1">${act1}</label>
+            <input type="checkbox" id="scales2" name="scales" checked/>
+            <label for="scales2">${act2}</label></p>
+            <img src="/img/reloj.png" width="45" height="45">
+            <button type="button">Realizado</button>
+            <button type="button" id=eliminar>Eliminar</button>
+          </li>
+        </div>
+      </div>
     `;
     console.log(elemento);
     lista.append(elemento);
@@ -55,7 +59,7 @@ $(document).ready(function() {
 
 //eliminar lo creado de actividad
 $(document).on("click", "#eliminar", function() {
-  $(this).closest("li").remove();
+  $(this).closest("div").remove();
 });
 
 
