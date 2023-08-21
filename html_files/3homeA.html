@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades| lisTame</title>
+    <link rel="stylesheet" href="estiloHome.css">
+    <link rel="stylesheet" href="estiloPreguntas.css">
 </head>
-<link rel="stylesheet" href="estiloHome.css">
+
 
 <body>
     <img class="logoimg" src="logo.png" width="100" height="100">
@@ -56,17 +58,90 @@
         </div>
     </div>
 
-    <div class="content">
-        <div class="tarjeta">
-            <p>Pasear al perro</p>
-            <img src="reloj.png" width="45" height="45">
-            <p>11-12 pm</p>
-            <p>24/06/2023</p>
-            <button type="button">Posponer</button>
-            <button type="button">Finalizar</button>
-            <button type="button">Más Tiempo</button>
-        </div>
+    <div class="formulario">
+        <h1  id="titulo">Preguntas</h1>
+        <form action="/formulario" method="post">
+            <div class="pregunta principal">
+                <h3>¿Qué actividad va a realizar?</h3>
+                <input class="texto detact" type="text" id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
+            </div>
+            <div class="pregunta">
+                <fieldset>
+                    <legend><h3>Tiempo para realizar la actividad</h3></legend>
+                    <p>
+                        <input class="radioOpc"
+                        type="radio"
+                        id="dia"
+                        name="time_act"
+                        value="dia"
+                        checked>
+                        <label for="dia">Este día</label>
+                    </p>
+                    <p>
+                        <input class="radioOpc" type="radio" id="semana" name="time_act" value="semana"/>
+                        <label for="semana">Esta semana</label>
+                    </p>
+                    <p>
+                        <input class="radioOpc" type="radio" id="mes" name="time_act" value="mes"/>
+                        <label for="mes">Este mes</label>
+                    </p>
+                    <p>
+                        <input class="radioOpc" type="radio" id="year" name="time_act" value="year"/>
+                        <label for="year">Este año</label>
+                    </p>
+                </fieldset>
+            </div>
+            <!--segunda pregunta-->
+            <div class="pregunta">
+                <fieldset>
+                    <legend><h3>¿Cuál es el tipo de actividad?</h3></legend>
+                    <p>
+                        <input class="radioOpc"
+                        type="radio"
+                        id="sencilla"
+                        name="tipo_act"
+                        value="sencilla"
+                        checked> 
+                        <label for="sencilla">Actividad sencilla</label>
+                    </p>
+                    <p>
+                        <input class="radioOpc" type="radio" id="compleja" name="tipo_act" value="compleja">
+                        <label for="compleja">Actividad compleja</label>
+                    </p> 
+                </fieldset>
+            </div>
+            <div class="pregunta">
+                <fieldset>
+                    <legend><h3>Detalle un máximo de 5 subtareas</h3></legend>
+                    <p>
+                        <label for="act1">1.</label>
+                        <input class="texto" type="text" id="act1" name="act1"> 
+                    </p>
+                    <p>
+                        <label for="act2">2.</label>
+                        <input class="texto" type="text" id="act2" name="act2">
+                    </p>
+                    <p>
+                        <label for="act3">3.</label>
+                        <input class="texto" type="text" id="act3" name="act3">
+                    </p>
+                    <p>
+                        <label for="act4">4.</label>
+                        <input class="texto" type="text" id="act4" name="act4">
+                   </p>
+                   <p>
+                        <label for="act5">5.</label>
+                        <input class="texto" type="text" id="act5" name="act5">
+                   </p>
+                </fieldset>
+            </div>
+            <button type="submit"><h4>Ingresar Actividad</h4></button>
+        </form>
     </div>
+
+    <ul id="lista">
+        
+    </ul>
 </body>
 
 </html>
