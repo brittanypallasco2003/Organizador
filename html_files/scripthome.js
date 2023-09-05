@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Creacion de lista de actividades
 $(document).ready(function() {
   const lista = $("#lista");
 
