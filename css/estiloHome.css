@@ -1,3 +1,5 @@
+/* Home general */
+
 *{
     margin: 0;
     padding:0;
@@ -152,3 +154,148 @@ header{
     margin-left: 40px;
     transition: 1s;
 }
+
+
+
+
+
+
+
+/*  */
+/* estilo preguntas */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+  }
+  
+  /*fondo de la pagina*/
+  body {
+    min-height: 100vh;
+    background:linear-gradient(130deg, gold , LightCoral, mediumpurple) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /*espacio entre preguntas*/
+  /* div.pregunta{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  } */
+  
+  /*espacio interno de preguntas*/
+  fieldset{
+    padding: 10px 25px 19px 25px;
+    border-radius: 4px;
+  }
+  
+  label {
+    margin-right: 15px;
+    line-height: 30px;
+  }
+  
+  
+  
+  
+  input:checked {
+    border: 7px solid rgb(92, 44, 44);
+  }
+  
+  legend {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 14px;
+  }
+  
+  div.formulario{
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: auto;
+   
+    background: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px; 
+    padding-bottom: 20px;
+  }
+  
+  
+  button{
+      border: 2px solid #000;
+      background-color: #000;
+      color: white;
+      border-radius: 4px;
+      padding: 10px 14px 10px 14px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+  }
+  
+  #titulo{
+     text-align: center; 
+     color: #000;
+  }
+  
+   .cabecera{
+    display: inline;
+    font-family: Tahoma;
+    font-size: 53px;
+  }
+  
+  img.cabecera{
+    position: relative;
+    top: 20px;
+    left: 5px;
+  }
+  
+  #nomPag{
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+  
+  form input.texto{
+    width: 420px;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  
+  .formulario input:focus{
+    outline:0;
+    border: 2px solid black;
+  }
+  
+  form input.detact{
+    width: 538px;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  
+  /* lista */
+  #lista {
+  
+    padding: 10px; 
+    list-style-type: none;
+  }
+  
+  #tarjeta {
+    border: 1px solid black; 
+    padding: 10px; 
+    list-style-type: none;
+  }
+  
+  
+  
