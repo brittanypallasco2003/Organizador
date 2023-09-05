@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades| lisTame</title>
+    <link rel="stylesheet" href="/css/estiloHome.css">
+    <link rel="stylesheet" href="/css/estiloPreguntas.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<link rel="stylesheet" href="estiloHome.css">
+
 
 <body>
-    <img class="logoimg" src="logo.png" width="100" height="100">
+    <img class="logoimg" src="/img/logo.png" width="100" height="100">
     <header>
-        <h2 class="logo" id="nombre">list̲ame<img src="icons8-modo-oscuro-50.png" width="30" height="30"></h2>
+        <h2 class="logo" id="nombre">list̲ame<img src="/img/icons8-modo-oscuro-50.png" width="30" height="30"></h2>
         <br>
         <h2>Usuario: XXXX </h2>
         <nav class="navegacion">
@@ -19,7 +22,7 @@
                 <button class="login">Cerrar Session</button>
             </form>
         </nav>
-      </header>
+    </header>
     <nav>
         <table class="nav_act">
             <tr>
@@ -28,45 +31,63 @@
                 <br>
                 <br>
                 <br>
-                <th><a href="4preguntas.html"> Nueva Actividad</a></th>
+                <th  onclick="toggleContenido()" >Nueva Actividad</th>
                 <th><a href="5Pendientes.html">Actividades Pendientes</a></th>
                 <th> <a href="6Realizadas.html">Actividades Realizadas</a></th>
             </tr>
         </table>
     </nav>
 
-    <div class="Cabeza">
-        <div class="enunciado_act">
-            Hoy
-        </div>
-        <div class="enunciado_act espacial">
-            Recordatorio <img src="bell-jar-g875447cdf_1280.png" width="20" height="20">
-        </div>
+
+    <div class="formulario" id="contenido_oculto">
+        <h1 id="titulo">Preguntas</h1>
+        <form id="formulario" method="post">
+            <div class="pregunta principal">
+                <h3>¿Qué actividad va a realizar?</h3>
+                <input class="texto detact" type="text" id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
+            </div>
+            <div class="pregunta">
+                <fieldset>
+                    <legend><h3>Tiempo maximo a realizar la actividad</h3></legend>
+                    <input type="date" id="tiempo">
+                </fieldset>
+            </div>
+            <!--segunda pregunta-->
+            <div class="pregunta">
+                <fieldset>
+                    <legend><h3>¿Cuál es el tipo de actividad?</h3></legend>
+                    <p>
+                        <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="sencilla" checked> 
+                        <label for="sencilla">Actividad sencilla</label>
+                    </p>
+                    <p>
+                        <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="compleja">
+                        <label for="compleja">Actividad compleja</label>
+                    </p> 
+                </fieldset>
+            </div>
+            <div class="pregunta">
+                <fieldset>
+                    <legend><h3>Detalle un máximo de 5 subtareas</h3></legend>
+                    <p>
+                        <label for="act1">1.</label>
+                        <input class="texto" type="text" id="act1" name="act1"> 
+                    </p>
+                    <p>
+                        <label for="act2">2.</label>
+                        <input class="texto" type="text" id="act2" name="act2">
+                    </p>
+                </fieldset>
+            </div>
+            <button type="submit" id="botoningresar" onclick="toggleContenido()"><h4>Ingresar Actividad</h4></button>
+        </form>
     </div>
 
-    <div class="content">
-        <div class="tarjeta">
-            <p>Entrenar</p>
-            <img src="reloj.png" width="45" height="45">
-            <p>9-11 pm</p>
-            <p>24/06/2023</p>
-            <button type="button">Posponer</button>
-            <button type="button">Finalizar</button>
-            <button type="button">Más Tiempo</button>
-        </div>
-    </div>
+    <ul id="lista">
+        
+    </ul>
 
-    <div class="content">
-        <div class="tarjeta">
-            <p>Pasear al perro</p>
-            <img src="reloj.png" width="45" height="45">
-            <p>11-12 pm</p>
-            <p>24/06/2023</p>
-            <button type="button">Posponer</button>
-            <button type="button">Finalizar</button>
-            <button type="button">Más Tiempo</button>
-        </div>
-    </div>
+<script src="scripthome.js"></script>
 </body>
 
 </html>

@@ -14,12 +14,12 @@ body {
 }
 
 /*espacio entre preguntas*/
-div.pregunta{
+/* div.pregunta{
   margin-top: 25px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
-}
+} */
 
 /*espacio interno de preguntas*/
 fieldset{
@@ -33,23 +33,10 @@ label {
 }
 
 
-input.radioOpc {
-  appearance: none;
 
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-
-  border: 2px solid black;
-  transition: 0.2s all linear;
-  margin-right: 5px;
-
-  position: relative;
-  top: 4px;
-}
 
 input:checked {
-  border: 7px solid black;
+  border: 7px solid rgb(92, 44, 44);
 }
 
 legend {
@@ -66,7 +53,7 @@ div.formulario{
   align-items: center;
   width: 650px;
   height: auto;
-  margin: 65px auto;
+ 
   background: whitesmoke;
   border: 2px solid rgba(255, 255, 255, .5);
   border-radius: 20px;
@@ -87,6 +74,7 @@ button{
     padding: 10px 14px 10px 14px;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 #titulo{
@@ -130,4 +118,18 @@ form input.detact{
   padding-left: 20px;
   margin-top: 15px;
 }
+
+/* lista */
+#lista {
+
+  padding: 10px; 
+  list-style-type: none;
+}
+
+#tarjeta {
+  border: 1px solid black; 
+  padding: 10px; 
+  list-style-type: none;
+}
+
 
