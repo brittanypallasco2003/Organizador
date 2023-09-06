@@ -38,50 +38,53 @@
         </table>
     </nav>
 
-
-    <div class="formulario" id="contenido_oculto">
-        <h1 id="titulo">Preguntas</h1>
-        <form id="formulario" method="post">
-            <div class="pregunta principal">
-                <h3>¿Qué actividad va a realizar?</h3>
-                <input class="texto detact" type="text" id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
-            </div>
-            <div class="pregunta">
-                <fieldset>
-                    <legend><h3>Tiempo maximo a realizar la actividad</h3></legend>
-                    <input type="date" id="tiempo">
-                </fieldset>
-            </div>
-            <!--segunda pregunta-->
-            <div class="pregunta">
-                <fieldset>
-                    <legend><h3>¿Cuál es el tipo de actividad?</h3></legend>
-                    <p>
-                        <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="sencilla" checked> 
-                        <label for="sencilla">Actividad sencilla</label>
-                    </p>
-                    <p>
-                        <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="compleja">
-                        <label for="compleja">Actividad compleja</label>
-                    </p> 
-                </fieldset>
-            </div>
-            <div class="pregunta">
-                <fieldset>
-                    <legend><h3>Detalle un máximo de 5 subtareas</h3></legend>
-                    <p>
-                        <label for="act1">1.</label>
-                        <input class="texto" type="text" id="act1" name="act1"> 
-                    </p>
-                    <p>
-                        <label for="act2">2.</label>
-                        <input class="texto" type="text" id="act2" name="act2">
-                    </p>
-                </fieldset>
-            </div>
-            <button type="submit" id="botoningresar" onclick="toggleContenido()"><h4>Ingresar Actividad</h4></button>
-        </form>
+    <div class="content">
+        <div class="formulario" id="contenido_oculto">
+            <h1 id="titulo">Preguntas</h1>
+            <form id="formulario" method="post">
+                <div class="pregunta principal">
+                    <h3>¿Qué actividad va a realizar?</h3>
+                    <input class="texto detact" type="text" id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
+                </div>
+                <div class="pregunta">
+                    <fieldset>
+                        <legend><h3>Tiempo maximo a realizar la actividad</h3></legend>
+                        <input type="date" id="tiempo">
+                    </fieldset>
+                </div>
+                <!--segunda pregunta-->
+                <div class="pregunta">
+                    <fieldset>
+                        <legend><h3>¿Cuál es el tipo de actividad?</h3></legend>
+                        <p>
+                            <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="sencilla" checked> 
+                            <label for="sencilla">Actividad sencilla</label>
+                        </p>
+                        <p>
+                            <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="compleja">
+                            <label for="compleja">Actividad compleja</label>
+                        </p> 
+                    </fieldset>
+                </div>
+                <div class="pregunta">
+                    <fieldset>
+                        <legend><h3>Detalle un máximo de 5 subtareas</h3></legend>
+                        <p>
+                            <label for="act1">1.</label>
+                            <input class="texto" type="text" id="act1" name="act1"> 
+                        </p>
+                        <p>
+                            <label for="act2">2.</label>
+                            <input class="texto" type="text" id="act2" name="act2">
+                        </p>
+                    </fieldset>
+                </div>
+                <button type="submit" id="botoningresar" onclick="toggleContenido()"><h4>Ingresar Actividad</h4></button>
+            </form>
+        </div>
     </div>
+
+    
 
     <ul id="lista">
         
