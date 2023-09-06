@@ -101,36 +101,14 @@ div button{
     border-radius: 4px;
     color: #fff;
 }
-
+/*
 .cabecera{
     display: inline;
     font-family: Tahoma;
     font-size: 30px;
     margin-top: 100px;
-}
+}*/
 
-.logoimg{
-    position: absolute;
-    right: 1700px;
-}
-
-header{
-    position: fixed;
-    top: 0;
-    left: 80px;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    z-index: 99;
-}
-
-.logo{
-    font-size: 2em;
-    user-select: none;
-    position: absolute;
-}
 
 .navegacion a{
     position: relative;
@@ -158,10 +136,6 @@ header{
 
 
 
-
-
-
-/*  */
 /* estilo preguntas */
 *{
     margin: 0;
@@ -170,13 +144,6 @@ header{
     font-family: Tahoma;
   }
   
-  /*fondo de la pagina*/
-  body {
-    min-height: 100vh;
-    background:linear-gradient(130deg, gold , LightCoral, mediumpurple) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   
   /*espacio entre preguntas*/
   /* div.pregunta{
@@ -259,14 +226,8 @@ header{
     left: 5px;
   }
   
-  #nomPag{
-    position: relative;
-    top: 30px;
-    left: 20px;
-  }
-  
   form input.texto{
-    width: 100%;/*420px*/
+    width: 100%;
     height: 30px;
     padding-left: 20px;
     margin-top: 15px;
@@ -278,7 +239,7 @@ header{
   }
   
   form input.detact{
-    width: 100%;/*538px*/
+    width: 100%;
     height: 30px;
     padding-left: 20px;
     margin-top: 15px;
@@ -297,5 +258,58 @@ header{
     list-style-type: none;
   }
   
+/* Estilos generales del encabezado */
+.encabezado {
+  font-family: Tahoma;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.nombre-pag h1 {
+  font-size: 24px;
+  margin-left: 10px;
+  line-height: 70px;
+}
+
+.usuario {
+  flex-grow: 1; 
+  text-align: center; 
+}
+
+
+.usuario p {
+  font-size: 18px;
+  margin-left: 10px;
+  align-items: center;
+  line-height: 70px;
+}
+
+
+.cerrar-sesion {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-self: end;
+  text-decoration: underline;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
   
   
