@@ -37,6 +37,22 @@
         </table>
     </nav>
 
+    <h2 style="text-align: center; padding-bottom: 2rem; padding-top: 2rem;">Tareas pendientes</h2>
+
+    
+
+    
+
+    <ul id="lista">
+    </ul>
+
+    <h2 style="text-align: center;">Tareas realizadas</h2>
+
+    <ul id="tareas_realizadas" >
+
+    </ul>
+
+
     <div class="content">
         <div class="formulario" id="contenido_oculto">
             <h1 id="titulo">Preguntas</h1>
@@ -44,9 +60,9 @@
             <form id="formulario" method="post">
                 <div class="pregunta principal">
                     <h3>¿Qué actividad va a realizar?</h3>
-                    <input class="texto detact" type="text" id="act_realizar" name="act_realizar" placeholder="ej. lavar la ropa">
+                    <input class="texto detact" type="text" id="act_realizar" name="act_realizar" placeholder="Ej. Lavar la ropa">
                 </div>
-                
+                <br>
                 <div class="pregunta">
                     <fieldset>
                         <legend><h3>Tiempo maximo a realizar la actividad</h3></legend>
@@ -69,7 +85,7 @@
                 </div>
                 <div class="pregunta">
                     <fieldset>
-                        <legend><h3>Detalle un máximo de 5 subtareas</h3></legend>
+                        <legend><h3>Detalle un máximo de 2 subtareas</h3></legend>
                         <p>
                             <label for="act1">1.</label>
                             <input class="texto" type="text" id="act1" name="act1"> 
@@ -83,17 +99,6 @@
                 <button type="submit" id="botoningresar" onclick="toggleContenido()"><h4>Ingresar Actividad</h4></button>
         </div>
     </div>
-
-    
-
-    <ul id="lista">
-    </ul>
-
-    <h2>Tareas realizadas</h2>
-
-    <ul id="tareas_realizadas">
-
-    </ul>
 
 <script src="scripthome.js"></script>
 </body>

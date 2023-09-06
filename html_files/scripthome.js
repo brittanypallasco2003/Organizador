@@ -21,17 +21,19 @@ $(document).ready(function () {
       <div class="content">
         <div class="tarjeta">
           <li>
-            <p>Act: ${act_realizar}</p>
-            <p>Fecha límite: ${fecha}</p>
-            <p>Tipo de actividad: ${tipo}</p>
-            <h3>Detalles</h3>
+            <h3>Actividad</h3>
+            <p>${act_realizar}</p>
+            <h3>Fecha límite</h3>
+            <p>${fecha}</p>
+            <h3>Prioridad</h3>
+            <p>${tipo}</p>
+            <h3>Subtareas</h3>
             <p>
               <input type="checkbox" id="scales1" name="scales" checked />
               <label for="scales1">${act1}</label>
               <input type="checkbox" id="scales2" name="scales" checked />
               <label for="scales2">${act2}</label>
             </p>
-            <img src="/img/reloj.png" width="45" height="45">
             <button type="button" class="realizado-btn">Realizado</button>
             <button type="button" class="eliminar-btn">Eliminar</button>
           </li>
