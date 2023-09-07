@@ -247,9 +247,13 @@ div button{
 #lista{
   list-style: none;
   margin: 0;
+  display: flex;
+  flex-direction: row;
 }
 #tareas_realizadas{
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .tarjeta {
@@ -308,7 +312,21 @@ div button{
 .tarjeta button:hover {
   background-color: #0056b3; /* Cambia el color de fondo en hover */
 }
-
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas (por ejemplo, teléfonos móviles) */
+  #lista{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #tareas_realizadas{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
   
 
 
