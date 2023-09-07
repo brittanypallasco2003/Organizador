@@ -429,7 +429,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 body.dark {
   min-height: 100vh;
   background-color: #808B96;
-  position: absolute;
+  position: flex;
   background-size: cover;
   background-position: center;
 }
