@@ -20,7 +20,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +58,7 @@ header{
     font-weight: 500;
     margin-left: 40px;
 }
+
 
 .navegacion a::after{
     content: '';
@@ -230,10 +231,8 @@ header{
     right: 100px;
 }
 
-header #nombre{
-    position: relative;
-    right: 385px;
-    bottom: 5px ;
-    font-size: 53PX;
-
+.register{
+    height: 740px;
+    width: 530px;
+    margin: 100px 0;
 }
