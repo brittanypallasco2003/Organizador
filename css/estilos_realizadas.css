@@ -2,6 +2,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .capa{ 
@@ -13,7 +14,7 @@
  }
  #titulo{
     text-align:center;
-    font-family: Tahoma;
+    /*font-family: Tahoma;*/
      
  }
 
@@ -27,7 +28,7 @@
     padding: 30px;
     border-radius: 20px;
     opacity: .8;
-    font-family: Tahoma;
+    /*font-family: Tahoma;*/
     }
 
     .div-img {
