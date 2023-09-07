@@ -35,27 +35,11 @@
         <table class="nav_act">
             <tr>
                 <th  onclick="toggleContenido()" >Nueva Actividad</th>
-                <th><a href="5Pendientes.html">Actividades Pendientes (Calendario)</a></th>
+                <th><a href="calendario.html">Actividades Pendientes (Calendario)</a></th>
                
             </tr>
         </table>
     </nav>
-
-    <h2 style="text-align: center; padding-bottom: 2rem; padding-top: 2rem;">Tareas pendientes</h2>
-
-    
-
-    
-
-    <ul id="lista">
-    </ul>
-
-    <h2 style="text-align: center;">Tareas realizadas</h2>
-
-    <ul id="tareas_realizadas" >
-
-    </ul>
-
 
     <div class="content">
         <div class="formulario" id="contenido_oculto">
@@ -76,20 +60,24 @@
                 <!--segunda pregunta-->
                 <div class="pregunta">
                     <fieldset>
-                        <legend><h3>¿Cuál es el tipo de actividad?</h3></legend>
+                        <legend><h3>Prioridad</h3></legend>
                         <p>
-                            <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="sencilla" checked> 
-                            <label for="sencilla">Actividad sencilla</label>
+                            <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="Alta" checked> 
+                            <label for="sencilla">Alta</label>
                         </p>
                         <p>
-                            <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="compleja">
-                            <label for="compleja">Actividad compleja</label>
+                            <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="Media">
+                            <label for="compleja">Media</label>
+                        </p> 
+                        <p>
+                            <input class="radioOpc" type="radio" id="tipo_act" name="tipo_act" value="Baja">
+                            <label for="compleja">Baja</label>
                         </p> 
                     </fieldset>
                 </div>
                 <div class="pregunta">
                     <fieldset>
-                        <legend><h3>Detalle un máximo de 2 subtareas</h3></legend>
+                        <legend><h3>Detalle un máximo de 5 subtareas</h3></legend>
                         <p>
                             <label for="act1">1.</label>
                             <input class="texto" type="text" id="act1" name="act1"> 
@@ -98,11 +86,41 @@
                             <label for="act2">2.</label>
                             <input class="texto" type="text" id="act2" name="act2">
                         </p>
+                        <p>
+                            <label for="act2">3.</label>
+                            <input class="texto" type="text" id="act3" name="act3">
+                        </p>
+                        <p>
+                            <label for="act2">4.</label>
+                            <input class="texto" type="text" id="act4" name="act4">
+                        </p>
+                        <p>
+                            <label for="act2">5.</label>
+                            <input class="texto" type="text" id="act5" name="act5">
+                        </p>
                     </fieldset>
                 </div>
                 <button type="submit" id="botoningresar" onclick="toggleContenido()"><h4>Ingresar Actividad</h4></button>
         </div>
     </div>
+
+    <h2 style="text-align: center; padding-bottom: 2rem; padding-top: 2rem;">Tareas pendientes</h2>
+
+    
+
+    
+
+    <ul id="lista">
+    </ul>
+
+    <h2 style="text-align: center;">Tareas realizadas</h2>
+
+    <ul id="tareas_realizadas" >
+
+    </ul>
+
+
+   
 
 <script src="scripthome.js"></script>
 </body>

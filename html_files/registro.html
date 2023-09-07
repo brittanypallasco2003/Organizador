@@ -21,35 +21,35 @@
 
     <div class="cuadro">
       <div class="form-box login">
-        <h2>Regístrate</h2>
-        <form action="registro.php" method="POST"> 
-          <div class="input-box">
-            <span class="icon"><ion-icon name="person"></ion-icon></span>
-            <input type="text" name="Usuario" required> 
-            <label>Usuario</label>
-          </div>
-          <div class="input-box">
-            <span class="icon"><ion-icon name="mail"></ion-icon></span>
-            <input type="email" name="Correo" required> 
-            <label>Correo</label>
-          </div>
-          <div class="input-box">
-            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-            <input type="password" name="Clave" required> 
-            <label>Contraseña</label>
-          </div>
-          <div class="recuerdame">
-            <label><input type="checkbox" required>Acepto términos y condiciones</label>
-          </div>
-          <button class="btn">Regístrate</button>
-          <div class="login-registro">
-            <p>¿Ya tienes una cuenta?<a href="login.html" class="login-link"> Inicia sesión</a></p>
-          </div>
-        </form>
+          <h2>Regístrate</h2>
+          <form id="registro-form" action="home.html">
+              <div class="input-box">
+                  <span class="icon"><ion-icon name="person"></ion-icon></span>
+                  <input type="text" id="registro-usuario" name="Usuario" required>
+                  <label>Usuario</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                  <input type="email" id="registro-correo" name="Correo" required>
+                  <label>Correo</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                  <input type="password" id="registro-clave" name="Clave" required>
+                  <label>Contraseña</label>
+              </div>
+              <div class="recuerdame">
+                  <label><input type="checkbox" required>Acepto términos y condiciones</label>
+              </div>
+              <button type="button" class="btn" id="registro-button">Regístrate</button>
+              <div class="login-registro">
+                  <p>¿Ya tienes una cuenta?<a href="login.html" class="login-link"> Inicia sesión</a></p>
+              </div>
+          </form>
       </div>
-    </div>
+  </div>
 
-    <script src="script.js"></script>
+    <script src="register.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
