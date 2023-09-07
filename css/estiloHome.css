@@ -425,20 +425,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
+
+
 /*modo oscuro*/
 body.dark {
   min-height: 100vh;
   background-color: #808B96;
-  position: absolute;
+  position: flex;
   background-size: cover;
   background-position: center;
 }
 
 .switch{
- position: relative;
- display: inline-block;
- width: 60px;
- height: 34px; 
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; 
 }
 
 .switch input{
