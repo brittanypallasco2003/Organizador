@@ -425,11 +425,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
+
+
 /*modo oscuro*/
 body.dark {
   min-height: 100vh;
   background-color: #808B96;
-  position: absolute;
   background-size: cover;
   background-position: center;
 }
