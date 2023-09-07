@@ -6,8 +6,8 @@
 }
 
 .capa{ 
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     background:linear-gradient(130deg, gold , LightCoral, mediumpurple);
  }
 
@@ -51,7 +51,7 @@ th {
  .cerrar-sesion p {
     color: #ffffff;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     display:block;
     justify-content: end;
     text-align: right;
@@ -61,5 +61,4 @@ th {
     text-decoration: solid;
     color: rgb(255, 255, 255);
     text-decoration: underline;
-    font-weight: bold;
   }
