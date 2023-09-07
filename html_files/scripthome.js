@@ -96,6 +96,8 @@ $(document).ready(function () {
     tareaCompletada.appendTo(tareasRealizadas);
     $(this).hide();
   });
+
+  
 });
 
 //eliminar lo creado de actividad
@@ -112,14 +114,52 @@ function toggleContenido() {
 
 
 //modo oscuro
-document.getElementById('input').addEventListener('change', () => {
+// Comprueba si existe una cookie que almacena el estado del modo oscuro
+function isDarkModeEnabled() {
+  const darkModeCookie = getCookie('darkMode');
+  return darkModeCookie === 'true';
+}
+
+// Activa o desactiva el modo oscuro según la cookie
+function toggleDarkMode() {
   const body = document.body;
 
-  if (body.classList.contains('dark')) {
-      body.classList.remove('dark');
-      body.classList.add('light-mode');
+  if (isDarkModeEnabled()) {
+    body.classList.add('dark');
   } else {
-      body.classList.remove('light-mode');
-      body.classList.add('dark'); // Asegúrate de que 'dark' se agregue aquí
+    body.classList.remove('dark');
+  }
+}
+
+// Cambia el estado del modo oscuro cuando se hace clic en el botón de cambio
+document.getElementById('input').addEventListener('change', () => {
+  const body = document.body;
+  const isCurrentlyDarkMode = body.classList.contains('dark');
+
+  // Activa o desactiva el modo oscuro y actualiza la cookie
+  if (isCurrentlyDarkMode) {
+    body.classList.remove('dark');
+    body.classList.add('light-mode');
+    setCookie('darkMode', 'false', 365); // Desactiva el modo oscuro
+  } else {
+    body.classList.remove('light-mode');
+    body.classList.add('dark');
+    setCookie('darkMode', 'true', 365); // Activa el modo oscuro
   }
 });
+
+// Aplica el estado del modo oscuro al cargar la página
+toggleDarkMode();
+
+// Función para establecer una cookie
+function setCookie(name, value, days) {
+  const expires = new Date();
+  expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+  document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+}
+
+// Función para obtener el valor de una cookie
+function getCookie(name) {
+  const cookieValue = document.cookie.match(`(^|;) ?${name}=([^;]*)(;|$)`);
+  return cookieValue ? cookieValue[2] : null;
+}
