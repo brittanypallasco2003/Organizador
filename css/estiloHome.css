@@ -425,6 +425,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
+
+
 /*modo oscuro*/
 body.dark {
   min-height: 100vh;
@@ -435,10 +437,10 @@ body.dark {
 }
 
 .switch{
- position: relative;
- display: inline-block;
- width: 60px;
- height: 34px; 
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; 
 }
 
 .switch input{
