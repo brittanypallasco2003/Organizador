@@ -79,3 +79,17 @@ function toggleContenido() {
   contenido.style.display =
     contenido.style.display === "none" ? "block" : "none";
 }
+
+
+//modo oscuro
+document.getElementById('input').addEventListener('change', () => {
+  const body = document.body;
+
+  if (body.classList.contains('dark')) {
+      body.classList.remove('dark');
+      body.classList.add('light-mode');
+  } else {
+      body.classList.remove('light-mode');
+      body.classList.add('dark'); // Asegúrate de que 'dark' se agregue aquí
+  }
+});
