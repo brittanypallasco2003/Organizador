@@ -4,7 +4,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: Tahoma;
+    font-family: 'Montserrat', sans-serif;
   }
 
   body.light-mode {
@@ -29,7 +29,7 @@ tr th{
     font-size: 20px;
     margin-left: 30px;
     margin-right: 60px;
-    width: 108px;
+    width: 50%;
     color: #fff;
 }
 
@@ -78,13 +78,6 @@ div button{
     border-radius: 4px;
     color: #fff;
 }
-/*
-.cabecera{
-    display: inline;
-    font-family: Tahoma;
-    font-size: 30px;
-    margin-top: 100px;
-}*/
 
 
 .navegacion a{
@@ -118,7 +111,6 @@ div button{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: Tahoma;
   }
   
   
@@ -160,11 +152,10 @@ div button{
   div.formulario{
     justify-content: center;
     align-items: center;
-    width: auto;/*650px*/
+    width: 700px;/*650px*/
     height: auto;
     margin: 30px;
     background: whitesmoke;
-    border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
@@ -189,11 +180,11 @@ div button{
   #titulo{
      text-align: center; 
      color: #000;
+     padding-bottom: 20px;
   }
   
    .cabecera{
     display: inline;
-    font-family: Tahoma;
     font-size: 53px;
   }
   
@@ -341,11 +332,15 @@ div button{
 
 /* Estilos generales del encabezado */
 .encabezado {
-  font-family: Tahoma;
   color: #fff;
   display: flex;
   flex-direction: row;
   padding: 10px;
+  align-items: center;
+  background-color: #000;
+  justify-content: space-around;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  padding: 20px;
 }
 
 .logo img {
@@ -354,13 +349,13 @@ div button{
 }
 
 .nombre-pag h1 {
-  font-size: 24px;
+  font-size: 60px;
   margin-left: 10px;
-  line-height: 70px;
+  color: #fff;
 }
 
 .usuario {
-  flex-grow: 1; 
+  /*flex-grow: 1; */
   text-align: center; 
 }
 
@@ -487,7 +482,12 @@ input:checked+.slider::before{
 }
 
 
+.main-enc{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
+}
 
 
 
