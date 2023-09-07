@@ -252,7 +252,7 @@ div button{
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  
+  width: 40%;
   text-align: center;
 }
 
@@ -289,7 +289,7 @@ div button{
 
 /* Estilos para los botones dentro de la tarjeta */
 .tarjeta button {
-  background-color: #007bff;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
@@ -489,6 +489,10 @@ input:checked+.slider::before{
 
 }
 
+.button-form{
+  margin: 20px auto;
+  text-align: center;
+}
 
 
   
