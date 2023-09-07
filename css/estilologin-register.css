@@ -30,6 +30,8 @@ header{
 .logo{
     font-size: 2em;
     user-select: none;
+    width: 50px;
+    height: auto;
 }
 
 .navegacion a{
